@@ -1,4 +1,4 @@
-定义属性类型为数组及子元素类型：
+1.定义属性类型为数组及子元素类型：
 TodoList.propTypes = {
   todos: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
@@ -6,4 +6,10 @@ TodoList.propTypes = {
     text: PropTypes.string.isRequired
   }).isRequired).isRequired,
   toggleTodo: PropTypes.func.isRequired
+}
+
+2.字符串遍历 
+let text = '123'
+for (let i of text) {
+  console.log(i);
 }
