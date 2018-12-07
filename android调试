@@ -1,2 +1,3 @@
 更改app/build.gradle中compile为implementation,修改三个地方的版本号。
 修改game/index.html中内容，这个文件从egret生成android文件时不会被更新。
+发布app时取消调试面板显示：\app\src\main\java\com\zkhh\MainActivity.java 中修改nativeAndroid.config.showFPS = false;
